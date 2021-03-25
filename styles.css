@@ -1,0 +1,47 @@
+.container {
+    display:block;
+}
+
+.main-image {
+    width: 30%;
+}
+
+.main-h1 {
+    color: red;
+    font-family: 'Pangolin', cursive;
+}
+
+.description {
+    color: blue;
+    font-family: 'Pangolin', cursive;
+}
+
+.text {
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 30px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block !important;
+  }
+
+  /* Add a dark background to the active button */
+.w3-button.active {
+    background-color: #666 !important;
+    color: white !important;
+  }
+
+  .section {
+      color: #009688 !important;
+  }

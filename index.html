@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<title> Emily Chen's Personal Website </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<body onLoad="javascript:filterSelection('all')" ></body>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img/headshot.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Emily Chen</b></h4>
+    <p class="w3-text-grey"> Research Assistant | Data Scientist | Software Engineer | Student </p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#portfolio" onclick="w3_close();filterSelection('all')" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+    <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle fa-fw w3-margin-right"></i>RESUME</a>
+    <a href="#activities" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-certificate fa-fw w3-margin-right"></i>ACTIVITIES</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+
+  <div class="w3-panel w3-xlarge">
+    <a href="https://www.facebook.com/profile.php?id=100034782851299">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/emily-chen-817ab6177/">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
+    
+    <a href="mailto:chen.emi@northeastern.edu">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
+    
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+
+  <!-- Images of Me -->
+  <div class="w3-center w3-padding-16" id="about">
+    <div class='w3-center'>
+      <div class="section">
+        <h4><b>About</b></h4>
+      </div>
+      <h1> Let me introduce myself.</h1>
+    </div>
+
+  </div>
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-col m6">
+      <img src="img/me2.png" alt="Me" style="width:75%">
+    </div>
+    <div class="w3-col m6">
+      <img src="img/me3.png" alt="Me3" style="width:75%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-large" style="margin-bottom:32px">
+    <div class="w3-half">
+      <h3> Profile </h3>
+      <p>I am a B.S. candidate in Data Science and Biochemistry with a minor 
+        in Mathematics at Northeastern University. I am passionate about science 
+        research and data science and I am looking for opportunities that combine 
+        the two. I excel in collaborative environments and I strive to be as 
+        efficient as possible while maintaining accuracy and staying organized. 
+        I am passionate about genetics, bioinformatics, healthcare and computer 
+        science.</p>
+
+        <p> <b> Graduation Date: </b>Spring 2023</p>
+        <p> <b> Email: </b> chen.emi@northeastern.edu </p>
+        
+        <div class="w3-padding-64">
+          <h4>Laboratory Skills</h4>
+          <p> autoclaving, micropipeting, maintain and preparation of bacteria cultures, 
+            lyophilization, sterilization techniques, titration techniques, 
+            plasmid amplification, PCR, flow cytometry, pH meter </p>
+        </div>
+        
+    </div>
+
+    <div class="w3-half">
+      <h4>Technical Skills</h4>
+      <!-- Progress bars / Skills -->
+      <p>    </p>
+        <p>Python</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+      </div>
+      <p>    </p>
+      <p>Java</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+      </div>
+      <p>    </p>
+      <p>Tableau</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+      </div>
+      <p>    </p>
+      <p>SQL</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:75%">75%</div>
+      </div>
+      <p>    </p>
+      <p>HTML/CSS</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+      </div>
+    </div>
+
+  </div>
+ <hr>
+  <!-- Header -->
+  <header id="portfolio">
+    <a><img src="headshot.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <div class="w3-center w3-padding-16">
+        <div class='w3-center'>
+          <div class="section">
+            <h4><b>Projects</b></h4>
+          </div>
+          <h1> Click on any of my projects for more information! </h1>
+        </div>
+    
+      </div>
+    
+    <div class="w3-section w3-bottombar w3-padding-16" id="btnContainer">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-white active" onclick="filterSelection('all')" >ALL</button>
+      <button class="w3-button w3-white" onclick="filterSelection('science')"><i class="fa fa-heartbeat w3-margin-right"></i>Science</button>
+      <button class="w3-button w3-white w3-hide-small" onclick="filterSelection('technology')"><i class="fa fa-desktop w3-margin-right"></i>Technology</button>
+      <button class="w3-button w3-white w3-hide-small" onclick="filterSelection('publication')"><i class="fa fa-book w3-margin-right" ></i>Publications</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+
+  <div class="container">
+    <div class="w3-row-padding">
+
+      <!-- Northeastern Database Project-->
+      <div class="w3-third w3-container w3-margin-bottom filterDiv technology">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#databaseProject">
+        <img src="img/research.jpeg" alt="research" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Northeastern Research Database</b></p>
+          <p>Created a website and database for students to navigate and apply to research labs
+            of all of Northeastern's colleges.</p>
+        </div> 
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="databaseProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/research.jpeg" alt="research" style="width:100%" class="w3-hover-opacity">
+                <p><b>Languages Used:</b> SQL, Python</p>
+                <p><b>Software Used:</b> MySQL Workbench, PyCharm, Excel</p>
+                <p><b>When: </b>Spring 2021</p>
+                <p><b>Why: </b> Each college in Northeastern has their own seperate website showing their research labs, 
+                  but there is not one website that combines all of the research across Northeastern as a whole. As a 
+                  student assisting in a civil engineering lab while I am not pursuing an engineering degree, I beleive 
+                  that students should be able to explore research outside of their field of study. This website creates a 
+                centralized platform for students to explore research labs across all colleges at Northeastern. </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+      <!-- Boston Tap Science Research Project -->
+      <div class="w3-third w3-container w3-margin-bottom filterDiv science">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bostonTap">
+          <img src="img/tap-water.jpeg" alt="tap water" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Advancing the Detection of Pollutants in Boston Drinking Water</b></p>
+          <p> Collaborated with PhD candidate to utilize DNA sequencing and bioinformatics 
+            approaches to identify metabolic potential of comammox communities. Measure 
+            chlorine, phosphate, alkalinity and nitrogen species in tap water samples</p>
+        </div>
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="bostonTap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/tap-water.jpeg" alt="tap water" style="width:100%" class="w3-hover-opacity">
+                  <p><b>Laboratory Techniques:</b> autoclaving, flow cytometry, sterilization techniques, mass spectrometry, pH meter</p>
+                  <p><b>When: </b>January 2020 – Present</p>
+                  <p><b>Why: </b> The bacterium in tap water fluctuate based on the chemicals in tap water as well as conditions such 
+                  as temperature and humidity outside. I work in the Pinto Lab as a research assistant to collect chemical information
+                  and combine it with bacterial information in an effort to model the bacterial levels in tap water to improve
+                  water filtration and distribution techniques.  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <!-- Heart Disease Project -->
+      <div class="w3-third w3-container w3-margin-bottom filterDiv technology">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#heartDisease">
+          <img src="img/heart-disease.jpeg" alt="heart" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Predicting Coronary Heart Disease</b></p>
+          <p> Utilized machine learning algorithms to predict if a given patient will develop 
+            heart disease using Python. Used Logistic Regression, Support Vector Classifier, 
+            K Nearest neighbor, Naïve Bayes and Decision Tree Classifier. </p>
+        </div>
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="heartDisease" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/heart-disease.jpeg" alt="heart" style="width:100%" class="w3-hover-opacity">
+                  <p><b>Languages Used: </b> Python </p>
+                  <p><b>Software Used: </b> Jupyter Notebook </p>
+                  <p><b>Libraries Used: </b> numpy, pandas, sklearn, matplotlib, plotly, seaborn, stats </p>
+                  <p><b>When: </b> Fall 2020 </p>
+                  <p><b>Why: </b> Heart disease leads to 12 million deaths per year, some of which can be 
+                    avoidable with lifestyle changes. This project aims to track the likelihood an individual 
+                    has of getting heart disease early enough so that they have the opportunity to change their 
+                    lifestyle whether it’s adding more activity of dieting in order to avoid it.</p>
+                  <p><b>Results: </b> Support Vector Machine Classification and Logistic Regression resulted 
+                    in the highest prediction accuracies around 0.850 using the cross validated data set with 
+                    selected features. There is no sign of over or underfitting because the training and testing 
+                    accuracy are similar. The features that affected the diagnosis of heart disease the most were 
+                    age, cigsPerDay, totChol, sysBP, diaBP, BMI, heartRate, glucose</p>
+                    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+
+      <!-- Visualizing Boston Tap -->
+      <div class="w3-third w3-container w3-margin-bottom filterDiv technology">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tapViz">
+          <img src="img/tap-water2.jpeg" alt="tap water" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Visualizaing Boston Tap Water</b></p>
+          <p>Designed a website encoding a stacked bar chart, table and heatmap using Javascript 
+            (d3.js), HTML and CSS. Presented the website the Pinto lab at one of their lab meetings. </p>
+        </div>
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="tapViz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/tap-water2.jpeg" alt="tap water" style="width:100%" class="w3-hover-opacity">
+                  <p><b>Languages Used: </b> JavaScript, CSS, HTML </p>
+                  <p><b>Libraries Used: </b> ds.js </p>
+                  <p><b>When: </b> Fall 2020 </p>
+                  <p><b>Why: </b> This project seeks to visualize characteristics of tap water, creating a visual 
+                    “story” which combines data from all characteristics, both chemical and genomic, taken of 
+                    tap water over a time series through a webpage comprised of three visualizations: a bar chart, 
+                    heatmap and table.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="w3-third w3-container w3-margin-bottom filterDiv publication">
+
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quantum">
+        <img src="img/quantum-computing.jpeg" alt="quantum computing" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Using Quantum Computing to Make a 'Virtually' Unhackable Internet</b></p>
+          <p> I wrote an article looking at the use of quantum-computing to improve the 
+            security of the internet. The United States and China are both looking to implement
+            this system to create a more efficient, secure internet. 
+          </p>
+        </div>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="quantum" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/quantum-computing.jpeg" alt="quantum computing" style="width:100%" class="w3-hover-opacity">
+                <p> If you are interested in reading my article, follow the link <a href="https://nuscimag.com/a-future-after-fossil-fuels-2f16e67eff9b">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+      <div class="w3-third w3-container w3-margin-bottom filterDiv publication">
+
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consent">
+        <img src="img/vials.jpeg" alt="23andMe" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>DNAge of Consent</b></p>
+          <p> I wrote an article exploring the use of data derived by 23andMe and 
+            the ethical measures that should be used to regulate it. A service that reveals 
+            so much of an individuals information must be regulated to preserve the privacy 
+            rights of its client.  </p>
+        </div>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="consent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/vials.jpeg" alt="23andMe" style="width:100%" class="w3-hover-opacity">
+                <p> If you are interested in reading my article, follow the link <a href="https://nuscimag.com/dnage-of-consent-fd67428e11ac">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+
+      
+
+
+      <div class="w3-third w3-container w3-margin-bottom filterDiv publication">
+
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#printing">
+        <img src="img/printing.jpeg" alt="3D printing" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>3D Printing a Future in Medicine</b></p>
+          <p> I wrote an article looking at the evolution of 3D printing, specifically in the medical domain. 
+            3D printing organs revolutionizes the medical field by introducing the potential to create a 
+            personalized organ, decreasing the chance of rejection dramatically.  </p>
+        </div>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="printing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/printing.jpeg" alt="3D printing" style="width:100%" class="w3-hover-opacity">
+                <p> If you are interested in reading my article, follow the link <a href="https://nuscimag.com/3d-printing-a-future-in-medicine-fecc722b717a">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="w3-third w3-container filterDiv publication">
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#politics">
+        <img src="img/politics.jpeg" alt="politics" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>The Building Blocks of Political Debates</b></p>
+          <p> I wrote an article to break down the structure of political debates. The art of argumentation 
+            commonly goes unnoticed in political debates, and this article looks to make that more apparent 
+            to its readers. </p>
+        </div>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="politics" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/politics.jpeg" alt="politics" style="width:100%" class="w3-hover-opacity">
+                <p> If you are interested in reading my article, follow the link <a href="https://nuscimag.com/the-building-blocks-of-political-debates-b604d9e564c6">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Bacterial Cellulose -->
+      <div class="w3-third w3-container w3-margin-bottom filterDiv science">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bc">
+        <img src="img/bacterial-cellulose.png" alt="bacterial-cellulose" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Utilization of Salt Gradients to Improve the Cleaning Process of Bacterial Cellulose</b></p>
+        <p> Investigated optimal methods to produce bacterial cellulose which could be used as artificial 
+          skin and blood vessels. •	Presented research findings at Long Island Science and Engineering 
+          Fair and received Honorable Mention in biochemistry and biomedical engineering. </p>
+      </div>
+        </button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="bc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/bacterial-cellulose.png" alt="bacterial-cellulose" style="width:100%" class="w3-hover-opacity">
+                <p><b>Laboratory Techniques:</b> micropipeting, maintain and preparation of bacteria cultures, 
+                  lyophilization, sterilization techniques, ANOVA statistics analysis, pH meter</p>
+                <p><b>When: </b> June 2018 – August 2018 </p>
+                <p><b>Why: </b> Bacterial cellulose, otherwise known as BC, is an extremely promising monomer 
+                  produced by certain species of bacterium. Its unique properties—high crystalline network structure, 
+                  biodegradability, and superior nano-fibrillar structure—have increasingly captured the interest of 
+                  the scientific community. In addition, its various applications, in particular BC’s use in artificial 
+                  blood vessels and tissue engineering, demonstrate its tremendous potential.
+                  However, before applications are made, the production of bacterial cellulose must become more 
+                  efficient and safe. Scientists are vigorously searching for methods for mass production of bacterial 
+                  cellulose and methods to more efficiently clean bacterial cellulose. 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    </div>
+
+    <!-- Fourth Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom filterDiv publication">
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fossil">
+        <img src="img/fossil-fuels.jpeg" alt="fossil fuels" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>A Future After Fossil Fuels</b></p>
+          <p> I wrote an article addressing the world's use of fossil fuels and its effects 
+            on the environment and the economy. Fossil fuels are a nonrenewable resource,
+            and at the rate we are using them, fossil fuels will not be a viable energy source 
+            in the future. </p>
+        </div>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="fossil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="img/fossil-fuels.jpeg" alt="fossil fuels" style="width:100%" class="w3-hover-opacity">
+                <p> If you are interested in reading my article, follow the link <a href="https://nuscimag.com/a-future-after-fossil-fuels-2f16e67eff9b">here</a></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>    
+
+      <!-- CRISPR -->
+      <div class="w3-third w3-container filterDiv science">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#crispr">
+          <img src="img/crispr.jpeg" alt="crispr" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Using CRISPR/Cas9 to Correct a Mutation Causing Parkinson’s Disease</b></p>
+          <p>Investigated the use of gene editing technology (CRISPR-Cas-9) to cure a strain of 
+            Parkinson’s disease in C. elegans and presented research findings to Stony Brook 
+            University faculty.</p>
+        </div>
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="crispr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">More Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/crispr.jpeg" alt="crispr" style="width:100%" class="w3-hover-opacity">
+                  <p><b>Laboratory Techniques:</b> autoclaving, micropipeting, gel electrophoresis, 
+                    sterilization techniques, titration techniques, plasmid amplification, PCR </p>
+                  <p><b>When: </b> July 2015 – August 2015 </p>
+                  <p><b>Abstract: </b> Clustered Regularly Interspaced Short Palindromic Repeats 
+                    (CRISPR)/Cas9 is a DNA editing tool currently being used, that can modify the 
+                    genetic sequence of organisms. Because of specificity, this 
+                    newfound technology has the potential to lessen the effects of genetic diseases, 
+                    such as Parkinson’s. Parkinson’s is a neurodegenerative disorder characterized by 
+                    the damage or destruction of key dopamine-producing neurons in the substantia nigra.
+                    Although Parkinson’s is not typically inherited, certain genetic 
+                    markers have been shown to increase the chance of Parkinson’s. In humans, the G2019S 
+                    mutation on the LRRK2 gene is one of the most common genetic markers for Parkinson’s.
+                    This gene is homologous to the LRK-1 gene in Caenorhabditis elegans 
+                    (C. elegans). Due to genetic similarities between C. elegans and humans, we can find the 
+                    aforementioned mutation and attempt to correct it. We believe that by 
+                    targeting the specific mutations in C. elegans with the CRISPR/Cas9 technology, we may 
+                    weaken or eliminate the disease entirely. 
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+</div>
+<hr>
+<div id="resume">
+<div id='Resume'>
+<div class="w3-center"> 
+  <div class="section">
+    <h3> Resume </h3>
+  </div>
+  <h1> More of my Credentials. </h1>  
+</div>
+
+<div class="w3-center">
+<p>
+  <form method="get" action="Chen_Emily_Resume.pdf">
+    <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+      <i class="fa fa-download w3-margin-right"></i>Download Resume
+    </button>
+  </form>
+</p>
+</div>
+
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Research Assistant</b> | <i>Northeastern University</i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Jan 2020 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li> Working with a Ph.D. candidate to utilize DNA sequencing and bioinformatics approaches to identify the metabolic potential of comammox communities. </li>
+      <li> Collaborated with a PhD candidate to utilize DNA sequencing and bioinformatics approaches to identify the metabolic potential of comammox communities.</li>
+      <li> Analyzed over 2000 flow cytometry plots.</li>
+    </ul>
+    <hr>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Data Science Intern  </b> | <i> Signify Health </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2020 - Aug 2020</h6>
+    <ul>
+      <li> Formulate a novel model to represent heterogenous data in electronic health records using a 3d tensor. </li>
+      <li> Implement this model in a machine learning algorithm to predict potential surgeries of clients in advance.</li>
+      <li> Developed perplexity-based probability models using Python and Scala to evaluate over 10,000 patients.</li>
+      <li> Performed data aggregation using Spark and AWS.</li>
+    </ul>
+    <hr>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Research Assistant </b> | <i> Renssalaer Polytechnic Institute </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Aug 2018</h6>
+    <ul>
+      <li> Investigated optimal methods to produce bacterial cellulose which could be used as artificial skin and blood vessels. </li>
+      <li> Presented research findings at Long Island Science and Engineering Fair and received Honorable Mention in biochemistry 
+        and biomedical engineering. </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Research Assistant</b> | <i>North Shore University Hospital </i> </h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2018 - Aug 2018</h6>
+    <ul>
+      <li> Worked with a radiation oncology resident to evaluate different therapies for prostate cancer 
+        patients and their effects on their mental health. </li>
+      <li> Trained 5 high school and undergraduate students on how to interpret doctors’ notes, MRI’s 
+        and conduct statistical analysis. </li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Northeastern University</b></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2023</h6>
+    <p><b>Bachelors Degree</b></p>
+    <p><i> Data Science and Biochemistry, Minor in Mathematics </i></p>
+    <hr>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Plainview-Old Bethpage John F. Kennedy High School</b></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
+    <p><b> High School Degree </b></p><br>
+  </div>
+</div>
+
+<div class="w3-container w3-card w3-white w3-margin-bottom" id="activities">
+  <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Activities</h2>
+  
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Director of Communications</b> | <i> DATA Club </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2020 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li>Respond to and deliver information via emails and slack messages.</li>
+      <li>Maintain a semester calendar with all events and workshops the club is involved in.</li>
+    </ul>
+    <hr>
+  </div>
+
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>PR Chair</b> | <i> NU Women in Technology </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2020 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li> Deliver emails twice a week pertaining to opportunities for our members and upcoming events.</li>
+    </ul>
+      <hr>
+  </div>
+
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Mentor</b> | <i> Big Sister </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li> Visiting an underprivileged elementary student at her school weekly to mentor and serve as ongoing role model.</li>
+    </ul>
+      <hr>
+  </div>
+
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Writer</b> | <i> NUSCI </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li> Published work in four volumes of Northeastern’s science magazine in the fields of ethics, sustainable energy, political 
+        argumentation and quantum computing.</li>
+    </ul>
+      <hr>
+  </div>
+
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Teammate</b> | <i> Club Volleyball </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+    <ul>
+      <li> Mentored writing students at O'Bryant High School.</li>
+      <li> Advised students on college essays, research papers, and other writing assignments for their classes.</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>Student Volunteer</b> | <i> 826 Boston </i></h5>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - Apr 2020 </h6>
+    <ul>
+      <li> Attend and participate in practices twice a week.</li>
+      <li> Work at varsity volleyball games.</li>
+      <li> Lead by example on and off the court.</li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey w3-hover-opacity">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>chen.emi@northeastern.edu</p>
+      </div>
+
+      <div class="w3-third w3-teal w3-hover-opacity">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p> New York, NY | Boston, MA</p>
+      </div>
+
+      <div class="w3-third w3-dark-grey w3-hover-opacity">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>(516)-350-7889</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-twothird">
+      <h3>Thanks for reading my page! </h3>
+      <p>If you have any questions or are interested in hiring 
+        me don't hesitate to contact me and/or connect with me 
+        using the symbols in the sidebar.</p>
+    </div>
+
+    <div class="w3-third">
+      <h3>Interests </h3>
+      <p>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Volleyball</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Boston</span>
+        <span class="w3-tag w3-grey w3-margin-bottom w3-small w3-hover-opacity">Family</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Baking</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Cooking</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Bullet Journaling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Drawing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom w3-hover-opacity">Softball</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24"> This page was created by Emily Chen using some of the style elements from <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
