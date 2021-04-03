@@ -30,7 +30,27 @@
 .filterDiv {
     display: none; /* Hidden by default */
   }
+
+  .fa-python:hover {
+      color: #4B8BBE;
+  }
+
+  .fa-java:hover {
+    color: #f89820;
+  }
   
+  .fa-braille:hover {
+    color:#E32763;
+  }
+
+  .fa-database:hover {
+      color:#00758F;
+  }
+
+  .fa-code:hover {
+      color: #e34c26;
+  }
+
   /* The "show" class is added to the filtered elements */
   .show {
     display: block !important;
@@ -44,4 +64,62 @@
 
   .section {
       color: #009688 !important;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+
+  .col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .col {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
